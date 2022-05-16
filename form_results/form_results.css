@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Pinyon+Script&family=Poppins:wght@400;500&display=swap");
+body {
+  background: #efede8;
+  background: -webkit-linear-gradient(top left, #efede8, #eac9b9);
+  background: -moz-linear-gradient(top left, #efede8, #eac9b9);
+  background: linear-gradient(to bottom right, #efede8, #eac9b9);
+}
+.bigContainer {
+  padding: 0.5%;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 70%;
+  display: flex;
+  justify-content: left;
+  background: #efede8;
+  align-items: flex-start;
+  color: #4b382b;
+  font-family: "Poppins";
+  font-size: 100%;
+  text-decoration: none;
+  line-height: 200%;
+}
+.smallContainer {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  background: #efede8;
+  align-items: center;
+  color: #4b382b;
+  font-family: "Poppins";
+  font-size: 100%;
+  text-decoration: none;
+  line-height: 200%;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff7f1;
+  margin: auto;
+  width: 90%;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 4px 8px 0 #dab09b;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  justify-content: space-around;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.image {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  border-radius: 20px 20px 20px 20px;
+  margin: auto;
+}
+.imageDiv {
+  justify-content: center;
+}
+.productTitle {
+  font-size: 140%;
+}
+.productDescription {
+  font-size: 100%;
+}
+.navBar {
+  padding: 0.5%;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  column-gap: 0.3%;
+}
+
+.navColumn {
+  flex: 1;
+  background: -webkit-linear-gradient(to right, #debcb6, #caa693);
+  background: linear-gradient(to right, #d59885, #f4baaa);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.navButton {
+  display: block;
+  width: 100%;
+  color: #4b382b;
+  font-family: "Poppins";
+  font-size: 120%;
+  text-decoration: none;
+}
+
+.navColumn:hover {
+  background: -webkit-linear-gradient(bottom left, #dab09b, #ad7b66);
+  background: -moz-linear-gradient(bottom left, #dab09b, #ad7b66);
+  background: linear-gradient(to top right, #dab09b, #ad7b66);
+}
+.textTitle {
+  color: #ad7b66;
+  font-family: "Poppins";
+  font-size: 270%;
+  /* font-weight: bold; */
+  justify-content: center;
+  margin-bottom: -3%;
+  border-radius: 20px 20px 0px 0px;
+}
+.subTitle {
+  color: #ad7b66;
+  font-family: "Poppins";
+  font-size: 170%;
+  /* font-weight: bold; */
+  text-align: left;
+}
+.description {
+  color: #ad7b66;
+  font-family: "Poppins";
+  font-size: 120%;
+  text-align: justify;
+  text-indent: 50px;
+}
+.endBody {
+  border-radius: 0px 0px 20px 20px;
+}
+.footer {
+  width: 80%;
+  margin: auto;
+  padding: 0.5%;
+  font-family: "Poppins";
+  color: #4b382b;
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 1%;
+}
+
+.columnFooter {
+  flex: 1;
+  border-radius: 20px;
+  line-height: 2;
+  background-color: #efede8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-right: 40%;
+  margin-top: -4%;
+}
+
+.columnSocial {
+  flex: 1;
+  border-radius: 20px;
+}
+
+.socialIcons {
+  height: 75%;
+  width: 60%;
+}
+
+.socialIcons:hover {
+  transform: scale(1.15);
+}
+
+.textFooter {
+  font-size: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  color: #4b382b;
+  font-family: "Poppins";
+}
+
+.citatFooter {
+  font-size: 80%;
+  margin: 10%;
+  color: #4b382b;
+  font-family: "Poppins";
+  text-align: justify;
+}
+
+.titleColumn {
+  font-family: "Poppins";
+  font-size: 100%;
+  color: #ad7b66;
+  margin-top: 3%;
+  margin-left: 10%;
+}
+
+.titleStartFooter {
+  font-family: "Poppins";
+  font-size: 100%;
+  color: #ad7b66;
+  margin-top: 1%;
+  margin-left: 10%;
+}
+
+.footerButton {
+  text-decoration: none;
+  color: #4b382b;
+}
+
+.footerButton:hover {
+  background-color: #dab09b;
+  border-radius: 20px;
+  padding-right: 2%;
+  padding-left: 2%;
+  margin-left: -2%;
+  margin-right: -2%;
+}
+
+.copyright {
+  background-color: #dab09b;
+  text-align: center;
+  width: 80%;
+  color: #4b382b;
+  margin: auto;
+  border-radius: 20px;
+}

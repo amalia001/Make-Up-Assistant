@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>MAss - Scholarly HTML</title>
+    <link rel="stylesheet" href="https://w3c.github.io/scholarly-html/css/scholarly.min.css">
+    <link rel="shortcut icon" type="image/svg" href="../imagini/logo.png">
+    <style>
+        p {text-align: justify;}
+      </style>
+</head>
+
+<body prefix="schema: http://schema.org" style="font-family: 'Times New Roman', Times, serif; font-size: 15pt;">
+    <header>
+        <h1>Make-up Assistant</h1>
+    </header>
+    <div role="contentinfo">
+        <ol role="directory">
+            <li>
+                <a href="#abstract">
+                    <span>1. </span>Abstract
+                </a>
+            </li>
+            <li>
+                <a href="#introducere">
+                    <span>2. </span>Introducere
+                </a>
+            </li>
+            <li>
+                <a href="#motivatie">
+                    <span>3. </span>Motivație
+                </a>
+            </li>
+            <li>
+                <a href="#functionalitati">
+                    <span>4. </span> Funcționalitățile aplicației
+                </a>
+                <ol role="directory">
+                    <li>
+                        <a href="#menu"><span>4.1 </span>Meniul </a>
+                    </li>
+                    <li>
+                        <a href="#footer"><span>4.2 </span>Subsolul </a>
+                    </li>
+                    <li>
+                        <a href="#register"><span>4.3 </span>Componenta de înregistrare </a>
+                    </li>
+                    <li>
+                        <a href="#login"><span>4.4 </span>Componenta de login </a>
+                    </li>
+                    <li>
+                        <a href="#account"><span>4.5 </span>Contul personal al utilizatorului </a>
+                    </li>
+                    <li>
+                        <a href="#form"><span>4.6 </span>Completarea formularului</a>
+                    </li>
+                    <li>
+                        <a href="#form_results"><span>4.7 </span>Generarea de sugestii pentru baza formularului
+                            completat</a>
+                    </li>
+                    <li>
+                        <a href="#ranking"><span>4.8 </span>Generarea unui clasament al produselor</a>
+                    </li>
+                    <li>
+                        <a href="#download"><span>4.9 </span>Descărcarea clasamentului</a>
+                    </li>
+                    <li>
+                        <a href="#contact"><span>4.10 </span>Formular de contact</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="#colaborare">
+                    <span>5. </span>Metoda de colaborare
+                </a>
+                <ol role="directory">
+                    <li>
+                        <a href="#github"><span>5.1 </span>Github</a>
+                    </li>
+                    <li>
+                        <a href="#contributiile"><span>5.2 </span>Contribuții</a>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <a href="#concluzii">
+                    <span>6. </span>Concluzii
+                </a>
+            </li>
+            <li>
+                <a href="#referinte">
+                    <span>7. </span>Referințe
+                </a>
+            </li>
+        </ol>
+
+        <dl>
+            <dt>Autori</dt>
+            <dd>
+                <ol>
+                    <li property="schema:author" typeof="sa:ContributorRole">
+                        <a property="schema:author" href="https://github.com/amalia001" typeof="schema:Person">
+                            <span property="schema:familyName">Grădinariu</span>
+                            <span property="schema:givenName">Amalia-Laura</span>
+                        </a>
+                    </li>
+                    <li property="schema:author" typeof="sa:ContributorRole">
+                        <a property="schema:author" href="https://github.com/Radu-Rusu-Raluca" typeof="schema:Person">
+                            <span property="schema:familyName">Radu-Rusu</span>
+                            <span property="schema:givenName">Raluca-Ioana</span>
+                        </a>
+                    </li>
+                    <li property="schema:author" typeof="sa:ContributorRole">
+                        <a property="schema:author" href="https://github.com/stefanavintila" typeof="schema:Person">
+                            <span property="schema:familyName">Vintilă</span>
+                            <span property="schema:givenName">Ștefana</span>
+                        </a>
+                    </li>
+                </ol>
+            </dd>
+        </dl>
+    </div>
+
+    <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+        <h2><span>1. </span>Abstract</h2>
+        <p>
+            MAss (Make-up Assistant) este o aplicație Web ce oferă sfaturi privitoare la realizarea machiajului în
+            funcție de mai multe criterii (vârstă, ten, ocazie,
+            moment al zilei, preferințele utilizatorului etc.) pe baza diverselor produse specifice (creme, fonduri de
+            ten, rujuri etc.) oferite de diverse companii. De asemenea, se generează, un clasament al celor mai populare
+            produse
+            pe categorii de vârsta, gen, poziție socială și altele, disponibil în formatele HTML, RSS și PDF.
+
+        </p>
+    </section>
+
+    <section typeof="sa:Introduction" id="introducere" role="doc-introduction">
+        <h2><span>2. </span>Introducere</h2>
+        <p>
+            Make-up Assistant este un proiect realizat pentru materia Tehnologii Web, studiată în anul II, semestrul al
+            doilea.
+            Această aplicație creată pentru sugerarea unui machiaj complet pe baza unor criterii va oferi următoarele
+            funcționalități:
+        </p>
+        <ul>
+            <li>Posibilitatea de a crea un cont în aplicație, la care utilizatorii se vor putea conecta ulterior.
+            </li>
+            <li>Posibilitatea de a completa un formular în care utilizatorii își vor exprima preferințele și nevoile în funcție de
+                care se vor oferi sugestiile.</li>
+            <li>Utilizatorii vor avea posibilitatea de a vizualiza un clasament al produselor și de a-l descărca
+                în oricare dintre formatele HTML, RSS, PDF.</li>
+            <li>Utilizatorii vor avea posibilitatea de a contacta MAss printr-un formular. </li>
+        </ul>
+    </section>
+    <section typeof="sa:Motivation" id="motivatie" role="doc-prologue">
+        <h2><span>3. </span>Motivație</h2>
+        <p>
+            Găsirea unui machiaj potrivit pentru orice ocazie, mai ales când nu ai experiență, este o adevărată
+            provocare.
+            De aceea, prin proiectul MAss dorim să venim în ajutorul persoanelor care întâmpină această problemă,
+            oferindu-le o sugestie personalizată.
+        </p>
+    </section>
+    <section typeof="sa:MaterialsAndMethods" id="functionalitati" role="doc-chapter">
+        <h2><span>4. </span>Funcționalitățile aplicației</h2>
+        <img src="diagram.png" alt="diagram" width=60% style="margin-left:20%">
+        <p>
+            În continuare vom prezenta funcționalitățile aplicației și vom explica
+            rolul și metoda de implementare pentru fiecare element în parte. Este important să specificăm faptul că,
+            pentru a păstra datele de autentificare ne vom folosi de facilitățile oferite de
+            <strong>JWT</strong>.
+        </p>
+        <p>
+            În ceea ce privește <strong>tehnicile de prevenire a atacurilor de SQL Injection</strong> ne vom folosi de
+            funcția <strong>prepare()</strong>
+            pentru a pregăti/procesa datele primite de la utilizator, pe care ulterior le vom executa.
+        </p>
+        <section typeof="sa:MaterialsAndMethods" id="menu" role="doc-chapter">
+            <h3><span>4.1 </span>Meniu</h3>
+            <img src="menu.png" alt="Menu" width=80%>
+            <p>
+                Meniul este una dintre
+                componentele de bază ale aplicației web, întrucât el specifică toate acțiunile pe
+                care utilizatorul le poate întreprinde prin utilizarea aplicației noastre.
+            </p>
+            <p>
+                Pentru a îmbunătăți experiența utilizatorului pe site, am creat o bară de navigare care îl ajută să
+                acceseze cu ușurință fiecare pagină. 
+            </p>
+            <p>
+                Această componentă a fost implementată în toate paginile aplicației web.
+            </p>
+        </section>
+        <section typeof="sa:MaterialsAndMethods" id="footer" role="doc-chapter">
+            <h3><span>4.2 </span>Subsolul</h3>
+            <img src="footer.png" alt="Footer" width=80%>
+            <p>
+                O altă componentă creată pentru facilitarea navigării este subsolul, care vine ca o completare a
+                meniului, având suplimentar linkuri spre locație și către paginile de socializare ale MAss.
+            </p>
+            <p>
+                Această componentă a fost implementată în toate paginile aplicației web.
+            </p>
+        </section>
+        <section typeof="sa:MaterialsAndMethods" id="register" role="doc-chapter">
+            <h3><span>4.3 </span>Componenta de înregistrare</h3>
+            <img src="register.png" alt="Register" width=80%>
+            <p>
+                În partea de înregistrare vom avea 8 câmpuri: prenume, nume, gen, număr de telefon, locație, email,
+                parolă, confirmare parolă. Aceste date vor fi
+                introduse în baza de date, dar nu înainte ca noi să realizăm o verificare dacă nu există deja un cont cu
+                același username sau același email. La momentul actual, verificăm dacă aceste câmpuri sunt completate,
+                dacă acestea au forma specifică și dacă parola inițială se potrivește cu cea din câmpul
+                de confirmare a parolei.
+                În subsolul formularului, avem butonul de submit care va insera datele în baza de date, și care
+                ne duce la pagina de logare.
+            </p>
+            <p>
+                Această componentă a fost implementată în <a href="../SignUpPage/signUp.html">HTML</a> și <a
+                    href="../SignUpPage/signUp.css">CSS</a>.
+            </p>
+        </section>
+        <section typeof="sa:MaterialsAndMethods" id="login" role="doc-chapter">
+            <h3><span>4.4 </span>Login</h3>
+            <img src="login.png" alt="Login" width=80%>
+            <p>
+                Prin partea de login, cei ce se vor înregistra în baza noastră de date își vor putea folosi
+                contul pentru a vedea toată activitatea pe siteul nostru.
+            </p>
+            <p>
+                Din partea de PHP, vom avea pentru toate conturile un <strong>JWT generat</strong> pe care îl putem
+                decodifica pentru avea datele utilizatorului. JWT-ul se va păstra pe tot parcursul timpului în care
+                utilizatorul îl va petrece pe paginile noastre.
+            </p>
+            <p>
+                Tot aici este momentul în care decidem dacă este necesar un token. Astfel, dacă toate username-ul și
+                parola sunt corecte, se va genera acest JWT. Pentru toate cazurile contrare, vom șterge JWT-ul generat
+                și vom rămâne pe partea de login până când se vor introduce date valide.
+            </p>
+            <p>
+                Această componentă a fost implementată în <a href="../SignInPage/signIn.html">HTML</a> și <a
+                    href="../SignInPage/signIn.css">CSS</a>.
+            </p>
+
+        </section>
+        <section typeof="sa:MaterialsAndMethods" id="account" role="doc-chapter">
+            <h3><span>4.5 </span>Contul personal al utilizatorului</h3>
+            <img src="account.png" alt="Account" width=80%>
+            <p>
+                Pe această pagină utilizatorul își va putea vedea datele personale și le va putea actualiza, acestea
+                schimbându-se și în baza de date. De
+                asemenea, acesta va putea accesa rezultatele de la formularele anterioare.
+                Această componentă va putea fi vizualizată doar dacă utilizatorul va fi logat înainte.
+            </p>
+            <p>
+                Această componentă a fost implementată în <a href="../account/account.html">HTML</a> și <a
+                    href="../account/account.css">CSS</a>.
+            </p>
+
+        </section>
+        <section typeof="sa:MaterialsAndMethods" id="form" role="doc-chapter">
+            <h3><span>4.6 </span>Completarea formularului</h3>
+            <img src="form1.png" alt="Form" width=80%>
+            <img src="form2.png" alt="Form" width=80%>
+            <p>
+                Această pagină stă la baza proiectului nostru. Aici utilizatorul va trebui să răspundă la o serie de
+                întrebări, prin intermediul cărora noi ne vom contura recomandările.
+                Din dorința de a avea rezultate cât mai precise, am cerut informații generale despre persoană,
+                caracteristici precum nuanța tenului, ochilor sau a părului, tipul tenului, cât și informații despre
+                contextul în care va fi purtat machiajul.
+                În același timp, utilizatorul va putea să își exprime preferințele în materie de produse.
+            </p>
+            <p>
+                Această componentă a fost implementată în <a href="../form/form.html">HTML</a> și <a
+                    href="../form/form.css">CSS</a>.
+            </p>
+        </section>
+        <section typeof="sa:MaterialsAndMethods" id="form_results" role="doc-chapter">
+            <h3><span>4.7 </span>Generarea de sugestii pentru baza formularului completat</h3>
+            <img src="form_results1.png" alt="Form_Results" width=80%>
+            <img src="form_results2.png" alt="Form-Results" width=80%>
+            <p>
+                În această pagină se vor afișa sugestiile de produse pe baza răspunsurilor de la formularul completat
+                anterior. În funcție de alegerile utilizatorului, se vor lua din baza de date pentru produse cele care
+                corespund cel mai bine cerințelor. Fiecare produs va avea în baza de date numele, tipul, o scurtă descriere, o
+                imagine sugestivă și tag-uri pentru fiecare element personal cerut în formular, cât și frecvența cu care
+                acesta apare în rezultatele formularelor.
+            </p>
+            <p>
+                Totodată, deoarece fiecare imagine sugestivă a unui produs are un link direct spre un magazin online care îl comercializează, utilizatorul poate foarte ușor să afle mai multe detalii și să achiziționeze un produs care i-a atras atenția.
+            </p>
+            <p>
+                Această componentă a fost implementată în <a href="../form_results/form_results.html">HTML</a> și <a
+                    href="../form_results/form_results.css">CSS</a>.
+            </p>
+        </section>
+        <section typeof="sa:MaterialsAndMethods" id="ranking" role="doc-chapter">
+            <h3><span>4.8 </span>Generarea unui clasament al produselor</h3>
+            <img src="ranking1.png" alt="ranking" width=80%>
+            <img src="ranking2.png" alt="ranking" width=80%>
+            <p>
+                Acestă pagină are clasamentul produselor. Aici, folosindu-ne de baza de date vom putea afișa cele mai
+                populare produse în funcție de vârstă, statut social, vreme, gen și eveniment, criteriul fiind selectat
+                de către utilizator.
+            </p>
+            <p>
+                Această componentă a fost implementată în <a href="../ranking/ranking.html">HTML</a> și <a
+                    href="../ranking/ranking.css">CSS</a>.
+            </p>
+        </section>
+        <section typeof="sa:MaterialsAndMethods" id="download" role="doc-chapter">
+            <h3><span>4.9 </span>Descărcarea clasamentului</h3>
+            <p>
+                Componenta "Descărcarea clasamentului" va avea ca funcționalitate exportarea de către utilizator al unui fișier cu extensie aleasă de el dintre HTML, RSS și PDF.
+            </p>
+        </section>
+        <section typeof="sa:MaterialsAndMethods" id="contact" role="doc-chapter">
+            <h3><span>4.10 </span>Formular de contact</h3>
+            <img src="contact.png" alt="contact" width=80%>
+            <p>
+                Pagina de contact pune la dispoziţie utilizatorului opțiunea de a trimite direct un mesaj către echipa MAss în care acesta poate oferi feedback sau să caute ajutor dacă a întâmpinat o problemă.
+            </p>
+            <p>
+                Această componentă a fost implementată în <a href="../ContactPage/contact.html">HTML</a> și <a
+                    href="../ContactPage/contact.css">CSS</a>.
+            </p>
+        </section>
+    </section>
+
+    <section typeof="sa:MaterialsAndMethods" id="colaborare" role="doc-chapter">
+        <h2><span>5. </span>Metoda de colaborare</h2>
+        <p>
+
+        </p>
+        <section typeof="sa:MaterialsAndMethods" id="github" role="doc-chapter">
+            <h3><span>5.1 </span>Github</h3>
+            <p>
+                Pentru managementul codului sursă am folosit Github. Această platforma a venit cu o mulțime de avantaje, printre care cele mai utile fiind, în opinia noastră, posibilitatea de a vedea și actualiza în browser codul sursă și cea de a observa
+                modificările făcute pe parcursul proiectului. De asemenea, ne-am bucurat de faptul că am putut vedea în timp real ce face fiecare dintre noi, cât și de statisticile puse la dispoziție, aflând astfel cât de mult am scris, cât de des, și
+                câte commit-uri avem în total, în așa fel putând să vedem cât de complex este un astfel de proiect, câtă atenție cere, dar și cum am putea să ne îmbunătățim tehnica de lucru.
+            </p>
+        </section>
+        <section typeof="sa:MaterialsAndMethods" id="contributiile" role="doc-chapter">
+            <h3><span>5.2 </span>Contribuții</h3>
+            <p>
+                Echipa MAss a încercat să împartă în mod echitabil sarcinile de lucru, astfel toți membrii echipei au lucrat activ la acest proiect și fiecare a avut contribuții esențiale în realizarea
+                functionalităților implementate.
+            </p>
+        </section>
+    </section>
+
+    <section id="concluzii">
+        <h2><span>6. </span>Concluzii</h2>
+        <p>
+            Lucrând la această aplicație, am înțeles cât de multă muncă este în spatele unui site. Din dorința de a avea un produs final cât mai bun, am învățat o multitudine de aspecte legate de crearea de la zero a unui site web, cât și despre subiectul principal al aplicației, machiajul. Am realizat că
+            aplicațiile web sunt tehnologii complexe, care necesită multă atenție în implementare, dar și o gândire
+            creativă pentru a crea un design cât mai adecvat temei proiectului, care să fie în același timp și ușor de folosit pentru utilizator.
+        </p>
+    </section>
+
+    <section typeof="sa:ReferenceList" id="referinte" role="doc-bibliography">
+        <h2><span>7. </span>Referinţe</h2>
+        <ol>
+            <li property="schema:citation" role="doc-biblioentry" typeof="schema:ScholarlyArticle" id="Scholarly-html"
+                resource="https://w3c.github.io/scholarly-html/">
+                <cite property="schema:name">
+                    <a href="https://w3c.github.io/scholarly-html/">Scholarly HTML</a>
+                </cite>,
+                <span property="schema:author" typeof="schema:Person">
+                    <span property="schema:name">Tzviya Siegman (Wiley)</span>&amp;
+                    <span property="schema:name">Robin Berjon</span>
+                </span>
+            </li>
+        </ol>
+    </section>
+</body>
+
+</html>

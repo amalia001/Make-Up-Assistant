@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset=UTF-8>
+    <meta name="author" content="Vintila Stefana, Radu-Rusu Raluca, Gradinariu Amalia">
+    <link rel="stylesheet" type="text/css" href="contact.css"/>
+    <link rel="icon" href="imagini/logo.png" type="image/x-icon">
+    <title>MakeUp Assistant</title>
+    <meta name="description" content="This web application wants to offer advice on how to perform your skin care and makeup routine depending on your age, complexion, occasion, time of day and many other factors.">
+</head>
+    <body>
+        <div class="navBar">
+            <div class="navColumn">
+              <a class="navButton" href="..\home\home.html" target="_self">Home</a>
+            </div>
+            <div class="navColumn">
+              <a class="navButton" href="" target="_self">My Account</a>
+            </div>
+            <div class="navColumn">
+              <a class="navButton" href="..\form\form.html" target="_self">Personal Form</a>
+            </div>
+            <div class="navColumn">
+              <a class="navButton" href="..\ranking\ranking.html" target="_self">Ranking</a>
+            </div>
+            <div class="navColumn">
+              <a class="navButton" href="..\ContactPage\contact.html" target="_self">Contact Us</a>
+            </div>
+          </div>
+      
+          <br />
+
+         <main class="background"> 
+            
+            
+
+            <div class="container">
+                <div class="textTitle">
+                    <p><b>Need any help? Contact us! </p>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <img src="imagini/makeup.jpg" style="width:100%">
+                  </div>
+                  
+                  <div class="column">
+    
+                      <div>
+                        <form id="contact-form" method="post" action="">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" required placeholder="E.g.: Amalia" pattern="[A-Za-z]{3,}">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" required placeholder="E.g.: Gradinariu" pattern="[A-Za-z]{3,}">
+                            <label for="emaddress">Email Address</label>
+                            <input type="text" id="emaddress" name="emailaddress" required placeholder="E.g.: ceva@office.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                            <label for="phonenumber">Phone Number</label>
+                            <input type="text" id="phonenumber" name="phonenumber" required placeholder="E.g.: 0712345677" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                            <label for="message">Your message</label>
+                            <textarea id="message" name="message" placeholder="Write something.." style="height: 210px;" required ></textarea>
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <br>
+            <br>
+          </main> 
+          <div class="footer">
+            <div class="columnFooter">
+                <div class="titleColumn">MakeUp Assistant</div>
+                <div class="textFooter">Strada General Henri<br> Mathias Berthelot <br>Nr. 16, Iași 700259<br>
+                                        +40 232 211 990 <br>
+                
+                    <a href="https://www.google.com/maps/place/Facultatea+de+Informatic%C4%83/@47.1742347,27.5722564,18z/data=!4m9!1m2!2m1!1sfacultatea+de+informatica+iasi!3m5!1s0x40cafb6227e846bd:0x193e4b6864504e2c!8m2!3d47.1737991!4d27.5748359!15sCh5mYWN1bHRhdGVhIGRlIGluZm9ybWF0aWNhIGlhc2mSARFwdWJsaWNfdW5pdmVyc2l0eQ" 
+                    target="_self" class="footerButton">Map / Directions</a>
+                </div>
+            </div>
+
+            <div class="columnFooter">
+                <div class="titleColumn">Sitemap</div>
+                <div class="textFooter">
+                    <a href="..\home\home.html" target="_self" class="footerButton">Home</a><br>
+                    <a href="" target="_self" class="footerButton">My Account</a><br>
+                    <a href="..\form\form.html" target="_self" class="footerButton">Personal Form</a><br>
+                    <a href="..\ranking\ranking.html" target="_self" class="footerButton">Ranking</a><br>
+                    <a href="..\ContactPage\contact.html" target="_self" class="footerButton">Contact us</a>
+                </div>
+            </div>
+
+            <div class="columnFooter">
+                <p class="titleColumn">Social Media</p>
+                <div class="socialMedia">
+                    <div class="columnSocial">
+                        <a href="" target="_self"><img class="socialIcons" src="imagini/fbLogo.png"></a>
+                    </div>
+
+                    <div class="columnSocial">
+                        <a href="" target="_self"><img class="socialIcons" src="imagini/isLogo.png"></a>
+                    </div>
+
+                    <div class="columnSocial">
+                        <a href="" target="_self"><img class="socialIcons" src="imagini/twLogo.png"></a>
+                    </div>
+                </div>
+
+                <div class="titleStartFooter">Start your journey with us</div>
+                <div class="textFooter"><a href="..\SignUpPage\signUp.html" target="_self" class="footerButton">Sign Up</a></div>
+            </div>
+
+            <div class="columnFooter">
+                <div class="citatFooter">
+                    <cite>Makeup is not a tool meant to make an ugly thing beautiful, it is meant to magnify the beauty that already exists!</cite> <br>
+                </div>
+              </div>
+            </div>
+            <br>
+           <div class="copyright">
+               <p>&copy;MakeUp Assistant / All rights reserved</p>
+           </div>
+              
+    </body> 
+</html>

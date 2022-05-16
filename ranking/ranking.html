@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=UTF-8>
+        <meta name="author" content="Vintila Stefana, Radu-Rusu Raluca, Gradinariu Amalia">
+        <link rel="stylesheet" type="text/css" href="ranking.css"/>
+        <link rel="icon" href="imagini/logo.png" type="image/x-icon">
+        <title>MakeUp Assistant</title>
+        <meta name="description" content="This web application wants to offer advice on how to perform your skin care and makeup routine depending on your age, complexion, occasion, time of day and many other factors.">
+    </head>
+    <body>
+        <div class="navBar" >
+            <div class="navColumn">
+                <a class="navButton" href="..\home\home.html" target="_self">Home</a>
+            </div>
+            <div class="navColumn">
+                <a class="navButton" href="" target="_self">My Account</a>
+            </div>
+            <div class="navColumn">
+                <a class="navButton" href="..\form\form.html" target="_self">Personal Form</a>
+            </div>
+            <div class="navColumn">
+                <a class="navButton" href="..\ranking\rankig.html" target="_self">Ranking</a>
+            </div>
+            <div class="navColumn">
+                <a class="navButton" href="..\ContactPage\contact.html" target="_self">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="mainContainer">
+            <div class="criterias">
+                <div class="category">
+                    <div class="titleCategory">Age</div>
+                    <div class="options">
+                        <input type="radio" id="option" name="age" value="range1">
+                        <label for="option">14 - 18</label><br>
+
+                        <input type="radio" id="option" name="age" value="range2">
+                        <label for="option">18 - 28</label><br>
+
+                        <input type="radio" id="option" name="age" value="range3">
+                        <label for="option">28 - 38</label><br>
+
+                        <input type="radio" id="option" name="age" value="range4">
+                        <label for="option">38 - 50</label><br>
+
+                        <input type="radio" id="option" name="age" value="range5">
+                        <label for="option">50+</label><br>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="titleCategory">Social statute</div>
+                    <div class="options">
+                        <input type="radio" id="option" name="statute" value="lower">
+                        <label for="option">lower class</label><br>
+
+                        <input type="radio" id="option" name="statute" value="working">
+                        <label for="option">working class</label><br>
+
+                        <input type="radio" id="option" name="statute" value="lowerMiddle">
+                        <label for="option">lower middle class</label><br>
+
+                        <input type="radio" id="option" name="statute" value="upperMiddle">
+                        <label for="option">upper middle class</label><br>
+
+                        <input type="radio" id="option" name="statute" value="upper">
+                        <label for="option">upper class</label><br>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="titleCategory">Weather</div>
+                    <div class="options">
+                        <input type="radio" id="option" name="weather" value="sunny">
+                        <label for="option">sunny</label><br>
+
+                        <input type="radio" id="option" name="weather" value="hot">
+                        <label for="option">hot</label><br>
+
+                        <input type="radio" id="option" name="weather" value="clear">
+                        <label for="option">clear</label><br>
+
+                        <input type="radio" id="option" name="weather" value="humid">
+                        <label for="option">humid</label><br>
+
+                        <input type="radio" id="option" name="weather" value="raining">
+                        <label for="option">raining</label><br>
+
+                        <input type="radio" id="option" name="weather" value="snowing">
+                        <label for="option">snowing</label><br>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="titleCategory">Gender</div>
+                    <div class="options">
+                        <input type="radio" id="option" name="gender" value="M">
+                        <label for="option">male</label><br>
+
+                        <input type="radio" id="option" name="gender" value="F">
+                        <label for="option">female</label><br>
+
+                        <input type="radio" id="option" name="gender" value="O">
+                        <label for="option">prefer not to answer</label><br>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="titleCategory">Event</div>
+                    <div class="options">
+                        <input type="radio" id="option" name="event" value="daily">
+                        <label for="option">daily life</label><br>
+
+                        <input type="radio" id="option" name="event" value="party">
+                        <label for="option">party</label><br>
+
+                        <input type="radio" id="option" name="event" value="work">
+                        <label for="option">work</label><br>
+
+                        <input type="radio" id="option" name="event" value="school">
+                        <label for="option">school</label><br>
+
+                        <input type="radio" id="option" name="event" value="anniversary">
+                        <label for="option">anniversary</label><br>
+
+                        <input type="radio" id="option" name="event" value="date">
+                        <label for="option">date</label><br>
+
+                        <input type="radio" id="option" name="event" value="wedding">
+                        <label for="option">wedding</label><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products">
+                <div class="titleProducts">Makeup</div>
+                <div class="makeup">
+                    <div class="columnProduct">
+                        <div class="bestProduct">Foundation</div>
+                        <div class="description">Description</div>
+                    </div>
+
+                    <div class="columnProduct">
+                        <div class="bestProduct">Concealer</div>
+                        <div class="description">Description</div>
+                    </div>
+
+                    <div class="columnProduct">
+                        <div class="bestProduct">Blush</div>
+                        <div class="description">Description</div>
+                    </div>
+
+                    <div class="columnProduct">
+                        <div class="bestProduct">Highlighter</div>
+                        <div class="description">Description</div>
+                    </div>
+                </div>
+
+                <div class="makeup">
+                    <div class="columnProduct">
+                        <div class="bestProduct">Mascara</div>
+                        <div class="description">Description</div>
+                    </div>
+
+                    <div class="columnProduct">
+                        <div class="bestProduct">Eyeliner</div>
+                        <div class="description">Description</div>
+                    </div>
+
+                    <div class="columnProduct">
+                        <div class="bestProduct">Eyebrows</div>
+                        <div class="description">Description</div>
+                    </div>
+
+                    <div class="columnProduct">
+                        <div class="bestProduct">Lipstick</div>
+                        <div class="description">Description</div>
+                    </div>
+                </div>
+
+                <div class="makeup">
+                    <div class="columnProduct">
+                        <div class="bestProduct">Eyeshadow</div>
+                        <div class="description">Description</div>
+                    </div>
+
+                    <div class="columnProduct">
+                    </div>
+                    <div class="columnProduct">
+                    </div>
+                    <div class="columnProduct">
+                    </div>
+                </div>
+                
+                <br>
+                <div class="titleProducts">Skin care</div>
+                <div class="makeup">
+                    <div class="columnProduct">
+                        <div class="bestProduct">Cleanser</div>
+                        <div class="description">Description</div>
+                    </div>
+                    <div class="columnProduct">
+                        <div class="bestProduct">Cream</div>
+                        <div class="description">Description</div>
+                    </div>
+                    <div class="columnProduct">
+                        <div class="bestProduct">Sunscreen</div>
+                        <div class="description">Description</div>
+                    </div>
+                    <div class="columnProduct">
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <div class="button">Save as</div>
+                    <div class="dropdown-content">
+                      <a class="format" href="#">HTML</a>
+                      <a class="format" href="#">RSS</a>
+                      <a class="format" href="#">PDF</a>
+                    </div>
+                </div>
+                <br>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="columnFooter">
+                <div class="titleColumn">MakeUp Assistant</div>
+                <div class="textFooter">Strada General Henri<br> Mathias Berthelot <br>Nr. 16, Iași 700259<br>
+                                        +40 232 211 990 <br>
+                                        
+                    <a href="https://www.google.com/maps/place/Facultatea+de+Informatic%C4%83/@47.1742347,27.5722564,18z/data=!4m9!1m2!2m1!1sfacultatea+de+informatica+iasi!3m5!1s0x40cafb6227e846bd:0x193e4b6864504e2c!8m2!3d47.1737991!4d27.5748359!15sCh5mYWN1bHRhdGVhIGRlIGluZm9ybWF0aWNhIGlhc2mSARFwdWJsaWNfdW5pdmVyc2l0eQ" 
+                    target="_self" class="footerButton">Map / Directions</a>
+                </div>
+            </div>
+
+            <div class="columnFooter">
+                <div class="titleColumn">Sitemap</div>
+                <div class="textFooter">
+                    <a href="home.html" target="_self" class="footerButton">Home</a><br>
+                    <a href="" target="_self" class="footerButton">My Account</a><br>
+                    <a href="..\form\form.html" target="_self" class="footerButton">Personal Form</a><br>
+                    <a href="..\ranking\ranking.html" target="_self" class="footerButton">Ranking</a><br>
+                    <a href="" target="_self" class="footerButton">Contact us</a>
+                </div>
+            </div>
+
+            <div class="columnFooter">
+                <p class="titleColumn">Social Media</p>
+                <div class="socialMedia">
+                    <div class="columnSocial">
+                        <a href="" target="_self"><img class="socialIcons" src="imagini/fbLogo.png"></a>
+                    </div>
+
+                    <div class="columnSocial">
+                        <a href="" target="_self"><img class="socialIcons" src="imagini/isLogo.png"></a>
+                    </div>
+
+                    <div class="columnSocial">
+                        <a href="" target="_self"><img class="socialIcons" src="imagini/twLogo.png"></a>
+                    </div>
+                </div>
+
+                <div class="titleStartFooter">Start your journey with us</div>
+                <div class="textFooter"><a href="..\SignUpPage\signUp.html" target="_self" class="footerButton">Sign Up</a></div>
+            </div>
+
+            <div class="columnFooter">
+                <div class="citatFooter">
+                    <cite>Makeup is not a tool meant to make an ugly thing beautiful, it is meant to magnify the beauty that already exists!</cite> <br>
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy;MakeUp Assistant / All rights reserved</p>
+        </div>
+        
+    </body>
+</html>

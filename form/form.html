@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset=UTF-8>
+    <meta name="author" content="Vintila Stefana, Radu-Rusu Raluca, Gradinariu Amalia">
+    <link rel="stylesheet" type="text/css" href="form.css" />
+    <link rel="icon" href="imagini/logo.png" type="image/x-icon">
+    <title>MakeUp Assistant</title>
+    <meta name="description"
+        content="This web application wants to offer advice on how to perform your skin care and makeup routine depending on your age, complexion, occasion, time of day and many other factors.">
+</head>
+
+<body>
+
+    <div class="navBar">
+        <div class="navColumn">
+            <a class="navButton" href="../home/home.html" target="_self">Home</a>
+        </div>
+        <div class="navColumn">
+            <a class="navButton" href="../SignInPage/signIn.html" target="_self">My Account</a>
+        </div>
+        <div class="navColumn">
+            <a class="navButton" href="../form/form.html" target="_self">Personal Form</a>
+        </div>
+        <div class="navColumn">
+            <a class="navButton" href="../ranking/ranking.html" target="_self">Ranking</a>
+        </div>
+        <div class="navColumn">
+            <a class="navButton" href="../ContactPage/contact.html" target="_self">Contact Us</a>
+        </div>
+    </div>
+    <br>
+    <main>
+        <div class="bigContainer textTitle">
+            <p>Personal form</p>
+        </div>
+        <div class="bigContainer description">
+            <p>We are here to help you choose what will suit you best! </p>
+        </div>
+        <form action="form.php" method="get">
+            <div class="bigContainer"><label for="age">1. Please choose your age: </label>
+                <input type="range" value="20" id="age" class="slider" name="age" min="14" max="100"
+                    oninput="this.nextElementSibling.value=this.value">
+                <output>20</output>
+            </div>
+
+            <div class="bigContainer"><label>2. To which gender identity do you most identify? </label>
+            </div>
+            <div class="bigContainer smallContainer container">
+                <div class="column">
+                    <div class="checkbox"><input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="checkbox"><input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                    </div>
+                    <!-- <div class="checkbox"><input type="radio" id="transFemale" name="gender" value="Transgender Female">
+                    <label for="transFemale">Transgender Female</label>
+                </div>
+                <div class="checkbox"><input type="radio" id="transMale" name="gender" value="Transgender Male">
+                    <label for="transMale">Transgender Male</label>
+                </div>
+                <div class="checkbox"><input type="radio" id="variant" name="gender"
+                        value="Gender Variant/Non-Conforming">
+                    <label for="variant">Gender Variant/Non-Conforming</label>
+                </div> -->
+                    <div class="checkbox"><input type="radio" id="noansw" name="gender" value="Prefer Not to Answer">
+                        <label for="noansw">Prefer Not to Answer</label>
+                    </div>
+                </div>
+            </div>
+            <div class="bigContainer"><label for="social">3. Of which social class are you a part from?</label>
+                <select id="social" name="skin">
+                    <option>Lower Class</option>
+                    <option selected>Working Class</option>
+                    <option>Lower Middle Class</option>
+                    <option>Upper Middle Class</option>
+                    <option>Upper Class</option>
+                </select>
+            </div>
+
+            <div class="bigContainer"><label for="skin">4. What type of skin do you have? </label>
+                <select id="skin" name="skin">
+                    <option>Normal</option>
+                    <option>Oily</option>
+                    <option>Dry</option>
+                    <option>Sensitive</option>
+                    <option>Combination</option>
+                </select>
+            </div>
+            <div class="bigContainer"><label for="skinProblems">5. Do you have a skin problem? </label></div>
+            <div class="bigContainer"><select class="skinProblems" id="skinProblems" name="skinProblems" multiple>
+                    <option>I don't have any</option>
+                    <option>Acne</option>
+                    <option>Psoriasis</option>
+                    <option>Dullness</option>
+                    <option>Hiperpigmentation</option>
+                    <option>Dilated pores</option>
+                    <option>Rosacea</option>
+                    <option>Eczema</option>
+                    <option>Vitiligo</option>
+                </select>
+            </div>
+            <div class="bigContainer"><label>6. What allergies do you have?</label></div>
+            <div class="bigContainer smallContainer container">
+                <div class="column">
+                    <div class="checkbox"><input type="checkbox" id="none" name="allergies" value="I don't have any">
+                        <label for="none">I don't have any</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="fragrances" name="allergies" value="Fragrances">
+                        <label for="fragrances">Fragrances</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="latex" name="allergies" value="Latex">
+                        <label for="latex">Latex</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="parabens" name="allergies" value="Parabens">
+                        <label for="parabens">Parabens</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="sulfates" name="allergies" value="Sulfates">
+                        <label for="sulfates">Sulfates</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="dyes" name="allergies" value="Dyes">
+                        <label for="dyes">Dyes</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="alcohol" name="allergies" value="Benzyl Alcohol">
+                        <label for="alcohol">Benzyl Alcohol</label>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="checkbox"> <input type="checkbox" id="glycol" name="allergies" value="Propylene Glycol">
+                        <label for="glycol">Propylene Glycol</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="oils" name="allergies" value="Essential Oils">
+                        <label for="oils">Essential Oils</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="aluminum" name="allergies"
+                            value="Aluminum Compounds">
+                        <label for="aluminum">Aluminum Compounds</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="metals" name="allergies" value="Metals">
+                        <label for="metals">Metals</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="emollients" name="allergies" value="Emollients">
+                        <label for="emollients">Emollients</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="acids" name="allergies"
+                            value="Acids: salicylic acid, topical retinoids, glycolic acid">
+                        <label for="acids">Acids: salicylic acid, topical retinoids, glycolic acid</label>
+                    </div>
+                    <div class="checkbox"><input type="checkbox" id="otherInput" name="allergies" value="Other">
+                        <label for="other">Other</label>
+                        <input type="text" id="other" name="allergies" minlength="4" maxlength="100" size="8">
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
+               <select id="allergies" name="allergies" multiple>
+                <option>I don't have any</option>
+                <option>Fragrances</option>
+                <option>Latex</option>
+                <option>Parabens</option>
+                <option>Sulfates</option>
+                <option>Dyes</option>
+                <option>Benzyl Alcohol</option>
+                <option>Propylene Glycol</option>
+                <option>Essential Oils</option>
+                <option>Aluminum Compounds</option>
+                <option>Acids: salicylic acid, topical retinoids, glycolic acid</option>
+                <option>Metals</option>
+                <option>Emollients</option>
+            </select>
+        </div> -->
+            <div class="bigContainer"><label for="event">7. For what type of event do you want this makeup to be?
+                </label>
+                <select id="event" name="event">
+                    <option>Day to day life</option>
+                    <option>Party</option>
+                    <option>Work</option>
+                    <option>School</option>
+                    <option>Anniversary</option>
+                    <option>Date</option>
+                    <option>Wedding</option>
+                </select>
+            </div>
+            <div class="bigContainer"><label for="time">8. At what time of the day will the event take place? </label>
+                <select id="time" name="time">
+                    <option>Daytime 🔆 </option>
+                    <option>Evening 🌆 </option>
+                    <option>Night 🌃 </option>
+                </select>
+            </div>
+            <div class="bigContainer"><label for="weather">9. What will the weather be like?</label>
+                <select id="weather" name="weather">
+                    <option>Sunny ☀️ </option>
+                    <option>Hot 🌡️ </option>
+                    <option>Clear 🌤️ </option>
+                    <option>Humid 💧🌫️</option>
+                    <option>Raining ☔ </option>
+                    <option>Snowing ❄️ </option>
+                </select>
+            </div>
+            <div class="bigContainer"><label for="style">10. What style do you take into consideration?</label>
+                <select id="style" name="style">
+                    <option>Casual</option>
+                    <option>Business</option>
+                    <option>Elegant</option>
+                    <option>Cocktail</option>
+                    <option>Sporty</option>
+                </select>
+            </div>
+            <div class="bigContainer"><label>11. Please select three main colors for you look: </label>
+                <input type="color" name="color1" id="color1" value="#4b382b">
+                <input type="color" name="color2" id="color2" value="#4b382b">
+                <input type="color" name="color3" id="color3" value="#4b382b">
+            </div>
+            <div class="bigContainer"><label for="skinTone">12. Please select your skin tone: </label>
+                <select id="skinTone" name="skinTone">
+                    <option value="skin1">Pale Ivory</option>
+                    <option value="skin2">Warm Ivory</option>
+                    <option value="skin3">Sand</option>
+                    <option value="skin4">Rose Beige</option>
+                    <option value="skin5">Limestone</option>
+                    <option value="skin6">Beige</option>
+                    <option value="skin7">Sienna</option>
+                    <option value="skin8">Amberk</option>
+                    <option value="skin9">Honey</option>
+                    <option value="skin10">Band</option>
+                    <option value="skin11">Almond</option>
+                    <option value="skin12">Bronze</option>
+                    <option value="skin13">Umber</option>
+                    <option value="skin14">Golden</option>
+                    <option value="skin15">Expresso</option>
+                    <option value="skin16">Chocolate</option>
+                </select>
+            </div>
+            <div class="bigContainer"><label for="eyeColor">13. Please select your eye color: </label>
+                <select id="eyeColor" name="eyeColor">
+                    <option value="eye1">Black</option>
+                    <option value="eye2">Brown</option>
+                    <option value="eye3">Blue</option>
+                    <option value="eye4">Hazel</option>
+                    <option value="eye5">Amber</option>
+                    <option value="eye6">Green</option>
+                    <option value="eye7">Gray</option>
+                </select>
+            </div>
+            <div class="bigContainer"><label for="hairColor">14. Please select your hair color: </label>
+                <select id="hairColor" name="hairColor">
+                    <option value="hair1">Blonde</option>
+                    <option value="hair2">Brunette</option>
+                    <option value="hair3">Red</option>
+                    <option value="hair4">Black</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="bigContainer">
+                <label for="favs">15. Tell us if you have some favorite products:</label>
+            </div>
+            <div class="bigContainer"><textarea id="favs" name="favs" rows="7"
+                    cols="60">Please enter a link to each of them here... </textarea>
+            </div>
+            <div class="bigContainer description">
+                <p> That was it! Simple, wasn't it? Now, just press the submit button to receive your personalized
+                    recommendations.</p>
+            </div>
+            <div class="bigContainer">
+                <a class="submitButton" href="../form_results/form_results.html"><button class="submitButton"
+                        type="submit" form="assistance" value="Submit">Submit</button></a>
+            </div>
+            <div class="bigContainer endBody">
+                <p></p>
+            </div>
+        </form><br>
+    </main>
+    <div class="footer">
+        <div class="columnFooter">
+            <div class="titleColumn">MakeUp Assistant</div>
+            <div class="textFooter">Strada General Henri<br> Mathias Berthelot <br>Nr. 16, Iași 700259<br>
+                +40 232 211 990 <br>
+
+                <a href="https://www.google.com/maps/place/Facultatea+de+Informatic%C4%83/@47.1742347,27.5722564,18z/data=!4m9!1m2!2m1!1sfacultatea+de+informatica+iasi!3m5!1s0x40cafb6227e846bd:0x193e4b6864504e2c!8m2!3d47.1737991!4d27.5748359!15sCh5mYWN1bHRhdGVhIGRlIGluZm9ybWF0aWNhIGlhc2mSARFwdWJsaWNfdW5pdmVyc2l0eQ"
+                    target="_self" class="footerButton">Map / Directions</a>
+            </div>
+        </div>
+
+        <div class="columnFooter">
+            <div class="titleColumn">Sitemap</div>
+            <div class="textFooter">
+                <a href="../home/home.html" target="_self" class="footerButton">Home</a><br>
+                <a href="../SignInPage/signIn.html" target="_self" class="footerButton">My Account</a><br>
+                <a href="../form/form.html" target="_self" class="footerButton">Personal Form</a><br>
+                <a href="../ranking/ranking.html" target="_self" class="footerButton">Ranking</a><br>
+                <a href="../ContactPage/contact.html" target="_self" class="footerButton">Contact us</a>
+            </div>
+        </div>
+
+        <div class="columnFooter">
+            <p class="titleColumn">Social Media</p>
+            <div class="socialMedia">
+                <div class="columnSocial">
+                    <a href="" target="_self"><img class="socialIcons" src="imagini/fbLogo.png" alt="FacebookLogo"></a>
+                </div>
+
+                <div class="columnSocial">
+                    <a href="" target="_self"><img class="socialIcons" src="imagini/isLogo.png" alt="InstagramLogo"></a>
+                </div>
+
+                <div class="columnSocial">
+                    <a href="" target="_self"><img class="socialIcons" src="imagini/twLogo.png" alt="TwitterLogo"></a>
+                </div>
+            </div>
+            <div class="titleStartFooter">Start your journey with us</div>
+            <div class="textFooter"><a href="../SignUpPage/signUp.html" target="_self" class="footerButton">Sign Up</a>
+            </div>
+        </div>
+
+        <div class="columnFooter">
+            <div class="citatFooter">
+                <cite>Makeup is not a tool meant to make an ugly thing beautiful, it is meant to magnify the beauty that
+                    already exists!</cite> <br>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>&copy;MakeUp Assistant / All rights reserved</p>
+    </div>
+</body>
+
+</html>
