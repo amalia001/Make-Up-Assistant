@@ -1,7 +1,4 @@
 # Web-Technologies-Project-2022
-The team:
-* Grădinariu Amalia-Laura
-* Radu-Rusu Raluca-Ioana
-* Vintilă Ștefana
+This project is a web application which helps you find the perfect products for your makeup and skincare routine, using input data from the user.
 
 The project: MAss (Make-up Assistant)
